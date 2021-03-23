@@ -1,36 +1,35 @@
-#include<string.h>
-#include<iostream>
-#include<conio.h>
-#include<windows.h>
-#include<fstream>
-#include<stdio.h>
-#include<stdlib.h>
-#include<mmsystem.h>
-using namespace std;
+#include<string.h> // for strstr or string functions
+#include<iostream> // cin cout 
+#include<conio.h> // getche 
+#include<windows.h> // system.(color E4)
+#include<fstream> // fstream : ifstream(input , write) , ofstream(output, read)
+#include<stdio.h> //fflush()
+#include<stdlib.h> //goto
+using namespace std; // standard library (with the same name available in different libraries) if we do not use it we have to write std:: 
 class Input
 {
-protected:
+protected: 
     char sr[50];  //sr for search
 public:
 void input()
     {
-        fflush(stdin);
+        fflush(stdin); //used for output stream only. Its purpose is to clear (or flush) the output buffer and move the buffered data to console (in case of stdout) or disk (in case of file output stream).
         cout<<"\t\t\t\t\t    ##########################################\n";
         cout<<"\t\t\t\t\t    ##  Press any key to start searching    ##\n    ";
         cout<<"\t\t\t\t\t    ##########################################\n";
         
-        getche();
-        system("cls");
+        getche(); // waits for any character input from keyboard and it will also echo the input character on to the output screen
+        system("cls"); //clear the screen and move cursor to the upper left corner of screen 
         formating1();
         cout<<"\t\t\t\t\t    ###########################################################################################\n";
         cout<<"\t\t\t\t\t    #";
         cout<<"\t\t\t\t\t                                                      #\n";
         cout<<"\t\t\t\t\t    ###########################################################################################\n";
-        COORD e;
+        COORD e; //coordinate e
         e.X=45;
         e.Y=18;
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),e);
-        cin.getline(sr,51);
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),e); //SetConsoleCursorPosition(HANDLE,COORD);
+        cin.getline(sr,51); // Reads a stream of characters into the string buffer, It stops when. it has read length -1
         e.X=50;
         e.Y=20;
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),e);
@@ -49,7 +48,7 @@ void input()
         char c;
         cout<< " \t\t\t\t\t Type among the belows keywords to search about any information : \t\t\t\t\t \n # academic , # admission , # bank , # branch , # campus , # canteen , # career , # UPES , # company , # credit , # department , # depstar , # egovernance , \n # event , # facility , # faculty , # fee , # foyer , # ground , # hospital , # hostel , # infrastructure \n , #lab , # library , # placement , # social life , # sport , # stationary , # student , # training \n    "<<endl ;
 
-        cout<<"\n \t\t\t\t\t    1.Search  \n \t\t\t\t\t    2.Check History \n \t\t\t\t\t    3.Clear History \n \t\t\t\t\t    4.Upload \n\t\t\t\t\t    5.End \n\t\t\t\t\t    \n\t\t\t\t\t  "<<endl;
+        cout<<"\n \t\t\t\t\t    1.Search  \n \t\t\t\t\t    2.Check History \n \t\t\t\t\t    3.Clear History \n \t\t\t\t\t    4.Upload \n\t\t\t\t\t    5.Exit \n\t\t\t\t\t    \n\t\t\t\t\t  "<<endl;
         cin>>c;
         if((c=='1') || (c=='2') || (c=='3')  || (c=='4') || (c=='5'))
         {
@@ -58,7 +57,7 @@ void input()
         else
         {
             cout<<"Enter valid choice."<<endl;
-            goto CA;
+            goto CA; // goto to a labeled statement in the same function
         }
     }
     void check_history();
@@ -115,8 +114,10 @@ void Input::formating()
     Sleep(600);
     cout<<"\t\t\t\t    -------------------------------------------------------------------------------------------------------------"<<endl<<endl;
     cout<<"\t\t\t\t    -------------------------------------------------------------------------------------------------------------"<<endl<<endl;
-    cout<<"\t\t\t\t                                                                                             -BY GROUP 8 (Mayank , Shekhar , Tanish ,Urviza) B-tech CSE-BFSI VI  "<<endl;
-}
+    cout<<"\t\t\t\t                                                                                             -BY GROUP 7 (Mayank , Shekhar , Tanish ,Urviza) "<<endl;
+    cout<<"\t\t\t\t                                                                                                B-tech CSE-BFSI VI"<<endl;
+
+}  
 class Search:public Input       //class search for open file
 {
     public:
@@ -133,9 +134,11 @@ class Search:public Input       //class search for open file
 };
 void Search::Find()
 {
-    int a ;
+    
     ifstream file;
-
+// strlen() - this function returns length of any string
+// strcmp() - this function compares two strings
+// strstr() - this function check if string contains substring
     if(strstr(sr,"campus") || strstr(sr,"gate"))
     {
         file.open("campus.txt");
@@ -145,10 +148,17 @@ void Search::Find()
     {
         file.open("academic.txt");
     }
-
+    else if(strstr(sr,"career") || strstr(sr,"development"))
+    {
+        file.open("career.txt");
+    }
     else if(strstr(sr,"branch") || strstr(sr,"field"))
     {
         file.open("branch.txt");
+    }
+    else if(strstr(sr,"library") || strstr(sr,"libraries"))
+    {
+        file.open("library.txt");
     }
     else if(strstr(sr,"bank") || strstr(sr,"atm") || strstr(sr,"postoffice"))
     {
@@ -164,27 +174,11 @@ void Search::Find()
     }
     else
     {
-        f:
-        a=1;
+        
         cout<<"no result found ......";
 
     }
-    if(a==1)
-    {
-        
-    }
-    else
-    {
-        Sleep(800);
-        cout<<"\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
-        char c;
-        while(!(file.eof()))
-        {
-            file.get(c);
-            cout<<c;
-        }
-        cout<<"\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
-    }
+    
 }
 
 int main()
@@ -215,14 +209,7 @@ int main()
         if(c=='2')
         {
                cout<<"In Progress";
-                getche();
-
-                system("cls");
-                S1.formating1();
-                c=S1.again();
-
-                if(c=='2')
-                    goto a;
+                
 
         }
 
@@ -234,21 +221,10 @@ int main()
         {
             cout<<"In progress";
 
-            cout<<"History is cleared."<<endl;
-
-            getche();
-            system("cls");
-
-            S1.formating1();
-            c=S1.again();
-
-            if(c=='3')
-                goto b;
-                if(c=='2')
-                    goto a;
+            
         }
     
 
-    }while(c=='1' || c=='2' || c=='3' || c=='5' );
+    }while(c=='1' || c=='2' || c=='3' || c=='4'|| c=='5' );
 
 }
