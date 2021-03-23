@@ -40,8 +40,8 @@
                  - Mobile Application Development 
                  - Oil and Gas Informatics 
                  - Open Source and Open Standards 
-		 Information Technology               Computer Science and Engineering 
-		 Civil Engineering                    Information Technology
+		 Information Technology                
+		 Civil Engineering                    
 		 Mechanical Engineering
 		 Electrical and comunication
 		 Electrical Engineering 
