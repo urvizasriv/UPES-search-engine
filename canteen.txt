@@ -1,0 +1,51 @@
+                                                                 University Of Petroleum And Energy Studies
+                                                                               Food Court
+
+
+Name                                    Price
+
+Veg Samosa                                 Rs 10
+Chole Bhature                              Rs 35
+Veg Momos                                  Rs 20
+Veg Chowmein                               Rs 60
+Chicken Chowmein                           Rs 80
+Chicken Momos                              Rs 50
+Veg Fried Rice                             Rs 70
+Chicken Fried Rice                         Rs 90
+Paneer Kulche                              Rs 45
+Lays                                       Rs 10/20
+Kurkure                                    Rs 10/20
+Pepsi                                      Rs 40
+Tea                                        Rs 10
+Coffee                                     Rs 15
+Veg Dosa                                   Rs 60
+Veg Sandwich                               Rs 30
+Paneer Sandwich                            Rs 50
+Chicken Sandwich                           Rs 70
+Veg Roll                                   Rs 25
+Paneer Roll                                Rs 40
+Chicken Roll                               Rs 60
+Chicken Cheese Roll                        Rs 70
+Egg Chicken Roll                           Rs 80
+Double Egg Chicken Roll                    Rs 90
+Double Egg Double Chicken Roll             Rs 100
+Paneer Cheese Roll                         Rs 50
+Kachori                                    Rs 30
+Cold Coffee                                Rs 25
+Cadbury                                    Rs 15
+Five Star                                  Rs 15
+Perk                                       Rs 10
+Pasta                                      Rs 80
+French Fries                               Rs 40
+Veg Burger                                 Rs 25
+Paneer Burger                              Rs 40
+Chicken Burger                             Rs 60
+Paneer Cheese Burger                       Rs 50
+Mazaa                                      Rs 40
+Chocolate Truffle                          Rs 50
+Veg Patties                                Rs 15
+Paneer Patties                             Rs 30
+Chicken Patties                            Rs 60
+
+
+

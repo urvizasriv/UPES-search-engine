@@ -1,0 +1,59 @@
+                                                 BRANCHES
+
+=>There are sevral branches in UNIVERSITY OF PETROLEUM AND ENERGY STUDIES.
+=>There are two campuses for engineering specifically named as KANDOLI and BIDHOLI.
+=>There are other institutes as well for different branches such as B.Tech. (Hons.), M.Tech, BBA, B.Com, BCA, DOCTORAL. 
+  Like this....         
+
+
+
+         	                                                     PROGRAMS		
+                                              ___________________________|__________________________ _________________________________________________
+	                                      |                                                     |                                                |
+    				        UNDERGRADUATE 	                                       POSTGRADUATE                                       DOCTORAL
+                            __________________|________________                                     |                                                |
+                            |                                 |                                  M.Tech                                             PhD
+                         BIDHOLI                           KANDOLI                               - CSE+AI                                           - Computer Science Engineering
+                            |                                 |                                  - CSE+CSF
+		 Applied Petroleum Engineering               BBA                                 M.Tech by Research
+                       (Upstream)                            - EE                                MCA
+                 Applied Petroleum Engineering               - PPA                               - Internet Of Things
+                       (Gas Stream)                          - MKT                               - Banking, Financial Services and Insurance
+                 Computer Engineering                        - AVO                               - Artificial Intelligence and Machine Learning
+                 - Artificial Intelligence                   - OG
+                    and Machine Learning                     - LM
+                 - Banking, Financial Services               - AM
+                    and Insurance                            - FAS
+                 - Big Data                                  - FT
+                 - Business Analytics and                    - E-Business
+                    Optimization                             - DM
+                 - Cloud Computing and                       - HRM
+                    Virtualization Technology          
+                 - DevOps                              
+                 - Cyber Security and Forensics              B.Com
+                 - E-Commerce                                - Core
+                 - Graphics and Gaming                       - Taxation
+                 - Internet of Things and                    - Bank Management &
+                    Smart Cities                                Insurance 
+                 - IT Infrastructure 
+                 - Mainframe Technology 
+                 - Mobile Application Development 
+                 - Oil and Gas Informatics 
+                 - Open Source and Open Standards 
+		 Information Technology               Computer Science and Engineering 
+		 Civil Engineering                    Information Technology
+		 Mechanical Engineering
+		 Electrical and comunication
+		 Electrical Engineering 
+                 Automotive Design Engineering
+                 Aerospace Engineering
+                 Chemical Engineering
+                 Fire and Safety Engineering
+                 Mechatronics Engineering
+                 Renewable & Sustainable Energy
+                  Engineering
+                 Advance Materials & Nano Technology
+                 Medical Devices
+                
+
+

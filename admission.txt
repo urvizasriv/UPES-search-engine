@@ -1,0 +1,86 @@
+					___________________	
+				       | ADMISSION PROCESS |
+				       *********************
+
+University of Petroleum and Energy Studies (UPES) offers full-time UG courses such as B.Com, B.Sc, B.Tech, BCA, BBA, BA, B.Des, and 2 Year LLB. On the postgraduate level, the University offers M.Tech, MBA, MA (Eco.), M.Des, M.Plan, and LL.M programs. Full-time and part-time Ph.D.programs are also offered at the University. 
+
+UPES Admission Criteria is divided into two categories: examination pathway and non-examination pathway. For the examination pathway, admission is given through entrance exams conducted by UPES while for the non-examination pathway, admission is done on a merit basis or score in national level entrance exams.
+
+* University of Petroleum and Energy Studies Engineering Aptitude Test (UPESEAT) for B.Tech
+* UPES Planning Aptitude Test (UPAT) for B.Plan
+* University of Petroleum and Energy Studies Design Aptitude Test (UPES DAT) for B.Des
+* ULSAT for integrated LLB
+* UPESMET for MBA
+* Research Aptitude Test (RET) for Ph.D.
+
+
+
+
+Admission Process for B.Tech courses:--
+-------------------------------------
+
+Eligibility Criteria as per UGC :
+
+--->   50% marks in class 10 and 10+2 along with 50% marks in each of the Physics, Chemistry and Mathematics subjects at 10+2 level.
+
+--->   For admission through the Non-examination pathway, candidates must have 50% marks in 10+2 as well as in PCM subjects for board merit and 50% marks in 10+2 and PCM subjects for JEE Main merit.
+
+Admission Procedure for Management Quota
+--->   Admission procedure is as per the norms and rules defined by Admission Committee for Professional Courses, Govt. of Gujarat.
+
+--->   Admissions are only on merit basis.
+
+--->   No Donation or Capitation fees are demanded for any Admission.
+
+--->   80% seats are filled through UPESEAT followed by centralized counselling.
+
+--->   20% seats shall be filled through board / JEE Main merit category.
+
+--->   In case of vacant seats in the non-examination pathway, the university also fills the seats through UPESEAT.
+
+--->   Candidates from Uttarakhand State Board should have 80% marks in 10+2 and PCM. They should also be ranked within 150 in UK board to be eligible.
+
+SPECIALIZATIONS :--
+......................
+
+Cloud Computing & Virtualization Technology	               Open Source & Open Standards	                       Mainframe Technology	                                     Oil & Gas Informatics
+--------------------------------------------               ------------------------------                     ------------------------                                   --------------------------
+1.E-Commerce	                                           1.IT Infrastructure	                              1.Business Analytics and Optimization	                      1.Manufacturing Sytem
+
+2.Cyber Security & Forensics	                           2.Petroleum Engineering	                          2.Internet of Things and Smart Cities	                      2.Infrastructure Development
+
+3.Blockchain Technology	                                   3.AI & Machine Learning	                          3.Food Technology	                                          3.Big Data
+
+4.DevOps	                                               4.Applied Petroleum Engineering with 	          4.Geo-Informatics Engineering	                              4.Applied Petroleum Engineering with Specialization in Gas Stream
+                                                           Specialization in Upstream
+5.Chemical Engineering with Specialization 	               5.Mechanical Engineering	                          5.Automotive Design Engineering	                          5.Mechatronics Engineering
+in Refining & Petrochemicals
+6.Aerospace Engineering	                                   6.Aerospace Engineering with Specialization 	      6.Electronics & Communication Engineering                   6.Civil Engineering
+                                                           in Avionics 
+7.Fire & Safety Engineering                                7.B.Tech Electrical Engineering	                  7.Electrical Engineering	                                  7.Metallurgical & Material Engineering	Computational Sustainability
+
+8.Graphics & Gaming	                                       8.Cyber Law	                                      8.IPR Law	                                                  8.   -
+
+Admission Process for M.Tech courses:--
+-------------------------------------
+
+Eligibility Criteria as per UGC :
+
+--> Candidates appearing in their final year examinations are also eligible for UPES admission by providing the proof of eligibility.
+--> Candidates with a compartment in any of their subjects are not eligible for UPES admission.
+--> Those who have an M.Sc degree need to have 60% marks in B.Sc as well to be considered eligible.
+--> Candidates who don’t pass their semester at the first attempt and are not punctual academically, will not be provided any fellowship.
+
+SPECIALIZATIONS : 
+..................
+
+1.Chemical Engineering with specialization in Process Design Engineering       9.Automation and Robotics Engineering
+2.Petroleum Engineering                                                        10.Computational Fluid Dynamics
+3.Pipeline Engineering                                                         11.Health, Safety & Environmental (HSE) Engineering
+4.Energy Systems                                                               12.HSE with specialization in Disaster Management
+5.Renewable Energy Engineering
+6.Structural Engineering
+7.Rotating Equipment
+8.Computer Science & Engineering
+
+For rest of the information you can refer : https://collegedunia.com/university/25997-university-of-petroleum-and-energy-studies-upes-dehradun/admission
