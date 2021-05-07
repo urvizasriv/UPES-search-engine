@@ -186,13 +186,13 @@ void del() {
 }
 
 int List::menu() {
-    cout << "Enter the number of the operation you wish to perform (1-6)\n"
+    cout << "Enter the number of the operation you wish to perform (1-5)\n"
     << "1. Create new File\n"
     << "2. Open the contents of File \n"
     << "3. Display all the files of database present in current directory\n"
     << "4. Write into the file implicitly\n"
-    << "5. Delete a File\n"
-    << "6. Quit\n";
+   
+    << "5. Quit\n";
 
     int sel = 0;
     (std::cin >> sel).ignore();
@@ -220,11 +220,9 @@ int List::menu() {
            menu();
             break;
 
-        case 5: del();
-           menu();
-            break;
+        
 
-        case 6: return 0;
+        case 5: return 0;
             break;
 
         default: cout << "Please try again and enter a valid number\n\n";
@@ -385,7 +383,7 @@ class Search:public Input       //class search for open file
         void Find();
         ~Search()
         {
-            //PlaySound(TEXT("thank.wav"),NULL,SND_SYNC);
+           
             cout<<endl<<endl;
             cout<<"\n\t\t\t\t\t\t thanks for  visit"<<endl<<endl;
             getche();
@@ -572,16 +570,14 @@ void Search::Find()
     }
     if(a==1)
     {
-        // PlaySound(TEXT("wah.wav"),NULL,SND_SYNC);
-         //PlaySound(TEXT("result.wav"),NULL,SND_SYNC);
+        
     }
     else
     {
-        //PlaySound(TEXT("searchinginprocess.wav"),NULL,SND_SYNC);
         Sleep(800);
         cout<<"\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         char c;
-        //PlaySound(TEXT("data.wav"),NULL,SND_SYNC);
+        
         while(!(file.eof()))
         {
             file.get(c);
