@@ -43,14 +43,14 @@ void input()
  int again()
     {
         CA:
-            fflush(stdin);
+            fflush(stdin);//Its purpose is to clear (or flush) the output buffer and move the buffered data to console
         cout<<endl<<endl;
-        char c;
+        char c; // for input choice
         cout<< " \t\t\t\t\t Type among the belows keywords to search about any information : \t\t\t\t\t \n # academic , # admission , # bank , # branch , # campus , # canteen , # career , # UPES , # company , # credit , # department , # depstar , # egovernance , \n # event , # facility , # faculty , # fee , # foyer , # ground , # hospital , # hostel , # infrastructure \n , #lab , # library , # placement , # social life , # sport , # stationary , # student , # training \n    "<<endl ;
 
         cout<<"\n \t\t\t\t\t    1.Search  \n \t\t\t\t\t    2.Check History \n \t\t\t\t\t    3.Clear History \n \t\t\t\t\t    4.Upload \n\t\t\t\t\t    5.Exit \n\t\t\t\t\t    \n\t\t\t\t\t  "<<endl;
         cin>>c;
-        if((c=='1') || (c=='2') || (c=='3')  || (c=='4') || (c=='5'))
+        if((c=='1') || (c=='2') || (c=='3')  || (c=='4') || (c=='5')) // choices 
         {
             return c;
         }
@@ -64,6 +64,7 @@ void input()
     void clear_history();
     void formating1();
     void formating();
+
 
 };
 
@@ -183,30 +184,30 @@ void Search::Find()
 
 int main()
 {
-    char c;
+    char c; // for entering choice
 
-    system("color E4 ");
-    Search S1;
-    S1.formating();
+    system("color E4 "); // used to change color (E(yellow)= background , 4(Red) = text)
+    Search S1; // S1 is object of class Search
+    S1.formating(); // for printing UPES Search engine 
     
-    S1.again();
-
+    S1.again(); // for displaying command menu and calling any function to work again
+    // do while loop executed atleast once if condition is false
     do
     {
 
-        system("cls");
+        system("cls"); //clear the screen and move cursor to the upper left corner of screen 
         S1.formating1();
 
         S1.input();
-        S1.Find();
+        S1.Find(); // Find function is used to find the string using string compare strstr
 
-        c=S1.again();
+        c=S1.again(); // if user enters same choice again
     a:
         system("cls");
         S1.formating1();
         
 
-        if(c=='2')
+        if(c=='2') // for history
         {
                cout<<"In Progress";
                 
@@ -217,7 +218,7 @@ int main()
         system("cls");
         S1.formating1();
 
-        if(c=='3')
+        if(c=='3') // for clear history
         {
             cout<<"In progress";
 
@@ -225,6 +226,6 @@ int main()
         }
     
 
-    }while(c=='1' || c=='2' || c=='3' || c=='4'|| c=='5' );
+    }while(c=='1' || c=='2' || c=='3' || c=='4'|| c=='5' ); // 1.Search 2.history 3.clear history 4.Upload 5.exit
 
 }
