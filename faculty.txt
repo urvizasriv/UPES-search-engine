@@ -1,0 +1,67 @@
+FACULTY SCHOOL OF ENGINEERING
+    DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING
+	:--> Dean, School of Engineering : Prof Gurvinder Singh
+	:--> Assistant Professor : Dr. Gowari Ramaswamy
+                             : Dr. Sushabhan Chowdhury
+                             : Yogesh Chandra Gupta
+                             : Dr. Nunna Prasanthi Kumar
+                             : Narendra Balkishan Soni
+                             : Dr. Ranjan Mishra
+                             : Dr. Adesh Kumar
+                             : Arpit Jain
+                             : Dr. Devender Kumar Saini
+                             : Raj Gaurav Mishra
+                             : Dr. S. Vamsi Krishna
+    DEPARTMENT OF APPLIED SCIENCES AND HUMANITIES
+        DEPARTMENT OF PHYSICS
+        :--> Assistant Professor : Dr. S.K Vayalil
+                                 : Dr. Piyush Kuchhal
+                                 : Dr. Santosh Dubey
+                                 : Dr. Gagan Anand
+                                 : Dr. Prashant Shambhudayal
+                                 : Dr. Rajeev Kumar Gupta
+                                 : Dr. Amit Kumar Chawla
+                                 : Dr. Prasanta Mandal
+                                 : Dr. Santosh Kumar Joshi
+                                 : Dr. Abhishek Kumar Mishra
+                                 : Dr. Kailash Pandey
+                                 : Dr. Kanak Pal Singh Parma
+        DEPARTMENT OF CHEMISTRY
+        :--> Assistant Professor : Dr. Bhawna Yadav Lamba
+                                 : Dr. Pankaj Kumar
+                                 : Dr. Jitendra Kumar Pandey
+                                 : Dr. Shailey Singhal
+                                 : Dr. Kasibhatta S.R. Murth
+                                 : Dr. Sanjeev Kumar
+                                 : Dr. Dweepna Garg
+                                 : Dr. Atufali Saiyad
+                                 : Dr. Santosh Kumar Mishra
+                                 : Dr. Abhishek Kumar Pandey
+                                 : Dr. Kailash Kumar
+        DEPARTMENT OF MATHEMATICS
+        :--> Assistant Professor : Dr. Sanjeev Kumar
+                                 : Dr. Anuj Kumar
+                                 : Dr. Divya Ahluwalia
+                                 : Dr. Mukesh Kumar Singhal
+                                 : Dr. Akmal Husain
+                                 : Dr. Maheshwar Pathak
+                                 : Dr. Nitin Uniyal
+                                 : Dr. Sandeep Dixit
+                                 : Dr. Sanoj Kumar
+                                 : Dr. Shweta Sachdeva
+                                 : Dr. Anupam Bhandari
+    FACULTY SCHOOL OF COMPUTER SCIENCE
+	:--> Dean, School of Computer Science : Dr. Priyadarsan Patra
+	:--> Assistant Professor : Dr. Amit Agarwal
+                             : Dr. Alok Aggarwal
+                             : Dr. Deepshikha Bhargava
+                             : Dr. Neelu Jyoti Ahuja
+                             : Dr. Sunil Gupta
+                             : Dr. Vijendra Singh
+                             : Dr. Thipendra P Singh
+                             : Dr. Akashdeep Bhardwaj
+                             : Dharani Kumar Talapula
+                             : Pravin Dagdee
+                             : Ravi Shanker Singhal
+        
+        
