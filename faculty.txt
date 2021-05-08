@@ -1,4 +1,4 @@
-FACULTY SCHOOL OF ENGINEERING
+      FACULTY SCHOOL OF ENGINEERING
     DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING
 	:--> Dean, School of Engineering : Prof Gurvinder Singh
 	:--> Assistant Professor : Dr. Gowari Ramaswamy
@@ -63,5 +63,4 @@ FACULTY SCHOOL OF ENGINEERING
                              : Dharani Kumar Talapula
                              : Pravin Dagdee
                              : Ravi Shanker Singhal
-        
         
