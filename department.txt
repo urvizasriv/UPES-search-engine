@@ -1,0 +1,18 @@
+
+			MSTU  DEPARTMENTS			
+
+SCHOOL OF ENGINEERING
+    :--> DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING
+    :--> DEPARTMENT OF APPLIED SCIENCES AND HUMANITIES
+    :--> DEPARTMENT OF CHEMISTRY
+    :--> DEPARTMENT OF MATHEMATICS
+SCHOOL OF COMPUTER SCIENCE
+    :--> Department of Aerospace Engineering
+    :--> Department of Applied Sciences
+    :--> Department of Chemical Engineering
+    :--> Department of HSE and Civil Engineering
+    :--> Department of Electrical and Electronics Engineering
+    :--> Department of Mechanical Engineering
+    :--> Department of Petroleum Engineering and Earth Sciences
+    :--> Department of HSE and Civil Engineering
+
