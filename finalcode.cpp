@@ -105,7 +105,7 @@ void List::openDB() {
     
     char ch;
     string filename;
-    cout << "Enter the name of the database you want to open: ";
+    cout << "Enter the name of the file you want to open: ";
     getline (cin, filename);
     db.open(filename, fstream::in);
     cout<<"\nContent of "<<filename<<":-\n";
@@ -169,29 +169,13 @@ void add() {
 
 }
 
-void del() {
-    //function to delete the file
-    int status;
-    char fileName[20];
-    cout<<"Enter the Name of File: ";
-    cin>>fileName;
-    status = remove(fileName);
-    if(status==0)
-        cout<<"\nFile Deleted Successfully!";
-    else
-        cout<<"\nErorr Occurred!";
-    cout<<endl;
-    
-
-}
 
 int List::menu() {
     cout << "Enter the number of the operation you wish to perform (1-5)\n"
     << "1. Create new File\n"
-    << "2. Open the contents of File \n"
+    << "2. Write into the file implicitly\n"
     << "3. Display all the files of database present in current directory\n"
-    << "4. Write into the file implicitly\n"
-   
+    << "4. Open the contents of File \n"
     << "5. Quit\n";
 
     int sel = 0;
@@ -201,27 +185,15 @@ int List::menu() {
         case 1: createDB();
             menu(); // after creating file go back to list of options
             break;
-
-        case 2: openDB();
+        case 2: add();
             menu();
             break;
-
-
-
         case 3: display();
            menu();
             break;
-
-        
-
-        
-
-        case 4: add();
+        case 4: openDB();
            menu();
             break;
-
-        
-
         case 5: return 0;
             break;
 
@@ -269,6 +241,18 @@ void input()
         {
             sr[i]=tolower(sr[i]);
         }
+        
+        ofstream history("history.txt",ios::app);
+        history<<"-->";
+
+        for(int i=0;i<50 && sr[i]!='\0';i++)
+        {
+            history<<sr[i];
+        }
+
+        history<<endl;
+
+        history.close();
 
 
     }
@@ -278,7 +262,15 @@ void input()
             fflush(stdin);//Its purpose is to clear (or flush) the output buffer and move the buffered data to console
         cout<<endl<<endl;
         char c; // for input choice
-        cout<< " \t\t\t\t\t Type among the belows keywords to search about any information : \t\t\t\t\t \n # academic , # admission , # bank , # branch , # campus , # canteen , # career , # UPES , # company , # credit , # department , # depstar , # egovernance , \n # event , # facility , # faculty , # fee , # foyer , # ground , # hospital , # hostel , # infrastructure \n , #lab , # library , # placement , # social life , # sport , # stationary , # student , # training \n    "<<endl ;
+        cout<< " \t\t\t\t\t     #################################################################################\n " ;
+        cout<< " \t\t\t\t\t     #          Type among the belows keywords to search about any information       #\n " ;
+        cout<< " \t\t\t\t\t     # ------------------------------------------------------------------------------#\n " ;
+        cout<< " \t\t\t\t\t     # *academic , *admission ,*bank ,*branch , *campus , *canteen ,*lab, *career    #\n " ;
+        cout<< " \t\t\t\t\t     # *event ,*facility ,*faculty ,*fee ,*ground ,*infirmary ,*hostel ,*library     #\n " ;
+        cout<< " \t\t\t\t\t     # *placement ,*social life,*stationary ,*placement ,*training,*exchange program #\n " ;
+        cout<< " \t\t\t\t\t     # *career ,*company ,*credit ,*department ,*food court,*infrastructure,*sport   #\n " ;
+        cout<< " \t\t\t\t\t     #################################################################################\n " ;
+       
 
         cout<<"\n \t\t\t\t\t    1.Search  \n \t\t\t\t\t    2.Check History \n \t\t\t\t\t    3.Clear History \n \t\t\t\t\t    4.Upload \n\t\t\t\t\t    5.Exit \n\t\t\t\t\t    \n\t\t\t\t\t  "<<endl;
         cin>>c;
@@ -348,8 +340,8 @@ void Input::formating()
     Sleep(600);
     cout<<"\t\t\t\t    -------------------------------------------------------------------------------------------------------------"<<endl<<endl;
     cout<<"\t\t\t\t    -------------------------------------------------------------------------------------------------------------"<<endl<<endl;
-    cout<<"\t\t\t\t                                                                                             -BY GROUP 7 (Mayank , Shekhar , Tanish ,Urviza) "<<endl;
-    cout<<"\t\t\t\t                                                                                                B-tech CSE-BFSI VI"<<endl;
+    cout<<"\t\t\t\t                                                                 -BY GROUP 7 (Mayank , Shekhar , Tanish ,Urviza) "<<endl;
+    cout<<"\t\t\t\t                                                                                               B-tech CSE-BFSI VI"<<endl;
 
 }  
 
@@ -383,7 +375,6 @@ class Search:public Input       //class search for open file
         void Find();
         ~Search()
         {
-           
             cout<<endl<<endl;
             cout<<"\n\t\t\t\t\t\t thanks for  visit"<<endl<<endl;
             getche();
@@ -432,9 +423,9 @@ void Search::Find()
     {
         file.open("stationary,txt");
     }
-    else if(strstr(sr,"egovernance"))
+    else if(strstr(sr,"Student exchange"))
     {
-        file.open("egovernance.txt");
+        file.open("student_exchange.txt");
     }
     else if(strstr(sr,"library") || strstr(sr,"libraries"))
     {
@@ -452,13 +443,13 @@ void Search::Find()
     {
         file.open("academic.txt");
     }
-    else if(strstr(sr,"student") || strstr(sr,"boy"))
+    else if(strstr(sr,"placement") || strstr(sr,"boy"))
     {
-        file.open("student.txt");
+        file.open("placement.txt");
     }
-    else if(strstr(sr,"canteen") || strstr(sr,"cafeteria") || strstr(sr,"cafe"))
+    else if(strstr(sr,"canteen") || strstr(sr,"cafeteria") || strstr(sr,"cafe") || strstr(sr , "food court"))
     {
-        file.open("canteen.txt");
+        file.open("food_court.txt");
     }
     else if(strstr(sr,"career") || strstr(sr,"development"))
     {
@@ -468,10 +459,7 @@ void Search::Find()
     {
         file.open("credit.txt");
     }
-    else if(strstr(sr,"egovernance"))
-    {
-        file.open("egovernance.txt");
-    }
+    
     else if(strstr(sr,"department") || strstr(sr,"building") || strstr(sr,"admin"))
     {
         file.open("department.txt");
@@ -484,27 +472,21 @@ void Search::Find()
     {
         file.open("admission.txt");
     }
-    else if(strstr(sr,"rpcp") || strstr(sr,"pdpi") || strstr(sr,"cmpica") || strstr(sr,"i2im"))
+    else if(strstr(sr,"rpcp") || strstr(sr,"pdpi") || strstr(sr,"cmpica") || strstr(sr,"i2im") || strstr(sr , "department"))
     {
         file.open("department.txt");
     }
-    else if(strstr(sr,"arip") || strstr(sr,"mtin") || strstr(sr,"chandubhai"))
-    {
-        file.open("department.txt");
-    }
+    
     else if(strstr(sr,"event"))
     {
         file.open("event.txt");
     }
-    else if(strstr(sr,"foyer") || strstr(sr,"reading"))
-    {
-        file.open("foyer.txt");
-    }
+    
     else if(strstr(sr,"ground"))
     {
         file.open("ground.txt");
     }
-    else if(strstr(sr,"hospital") || strstr(sr,"health"))
+    else if(strstr(sr,"hospital") || strstr(sr,"health") || strstr(sr , "infirmary"))
     {
         file.open("hospital.txt");
     }
@@ -536,30 +518,10 @@ void Search::Find()
     {
         file.open("training.txt");
     }
-    else if(strstr(sr,"transport") || strstr(sr,"bus"))
+   else if(strstr(sr,"game") || strstr(sr,"movie") || strstr(sr,"facebook") || strstr(sr,"fb") || strstr(sr,"insta"))
     {
-        file.open("transport.txt");
-    }
-    else if(strstr(sr,"wifi") || strstr(sr,"enternet")|| strstr(sr,"wincell") || strstr(sr,"sophos"))
-    {
-        file.open("wifi.txt");
-    }
-    else if(strstr(sr,"depstar") || strstr(sr,"devang"))
-    {
-        file.open("depstar.txt");
-    }
-    else if(strstr(sr,"cspit") || strstr(sr,"chandubhai"))
-    {
-        file.open("cspit.txt");
-    }
-     else if(strstr(sr,"game") || strstr(sr,"movie") || strstr(sr,"facebook") || strstr(sr,"fb") || strstr(sr,"insta"))
-    {
-       //PlaySound(TEXT("funny.wav"),NULL,SND_SYNC);
+       
        goto f;
-    }
-     else if(strstr(sr,"UPES") || strstr(sr,"university") ||  strstr(sr,"petroleum"))
-    {
-        file.open("UPES .txt");
     }
     else
     {
@@ -577,7 +539,6 @@ void Search::Find()
         Sleep(800);
         cout<<"\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         char c;
-        
         while(!(file.eof()))
         {
             file.get(c);
