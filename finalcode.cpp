@@ -14,7 +14,7 @@ private:
     struct dataB{ //node
         string name;
         int open; //1 if open 0 if closed
-        dataB *next;
+        dataB *next; // pointer to next node
     };
     // initializing node variables to go through linked list and search
     dataB *head;
@@ -35,7 +35,7 @@ List::List(){
     temp = NULL;
 }
 void List::insert(string name, int open){
-    dataB *n = new dataB;
+    dataB *n = new dataB;  // everytime you call this function it will create new linked list
     n->next = NULL;
     n->name = name;
     n->open = open;
@@ -71,7 +71,7 @@ bool List::search(string fName){
 
     void List::createDB() {
         //this function creates a new file
-    ofstream db;
+    ofstream db; // create file 
     string fileName;
 
     
@@ -80,7 +80,7 @@ bool List::search(string fName){
 
     
     if(this->search(fileName) == false){ 
-        db.open(fileName.c_str());
+        db.open(fileName.c_str()); // c_str is used to convert the argument into c-string in order to open file in latest c++ version
         cout << "\nYour file " << fileName << " was created successfully\n";
 
         
@@ -102,15 +102,15 @@ bool List::search(string fName){
 void List::openDB() {
     //this function displays the contents of the file
     // need to add check to see if one is already open
-    fstream db;
+    fstream db; // open file in read mode
     
     char ch;
     string filename;
     cout << "Enter the name of the file you want to open: ";
     getline (cin, filename);
-    db.open(filename, fstream::in);
+    db.open(filename, fstream::in); // fstream::in means open file for reading: the internal stream buffer supports input operations.
     cout<<"\nContent of "<<filename<<":-\n";
-    while(db>>noskipws>>ch)
+    while(db>>noskipws>>ch) // noskipws : it does not skip any number of whitespaces before the next input. Tab spaces, blank spaces and carriage returns are considered whitespaces.
         cout<<ch;
     db.close();
     cout<<endl;
@@ -146,12 +146,12 @@ void display() {
 
 void add() { 
 // function to write into file explicitely
-    cout<<"Here you can write your contents into the file implicitly , otherwise just open the file and write into it \n \n";
+    cout<<"Here you can write your contents into the file implicitly , \n otherwise you can also just open the file from your system and write into it \n \n";
     char fname[20], str[200];
     fstream fp;
     cout<<"Enter the Name of File: ";
     gets(fname);
-    fp.open(fname, fstream::out);
+    fp.open(fname, fstream::out); // File open for writing: the internal stream buffer supports output operations.
     if(!fp)
     {
         cout<<"\nError Occurred!";
@@ -179,7 +179,7 @@ int List::menu() {
     << "4. Open the contents of File \n"
     << "5. Quit\n";
 
-    int sel = 0;
+    int sel = 0; // sel = select
     (std::cin >> sel).ignore();
 
     switch (sel) {
@@ -243,7 +243,7 @@ void input()
             sr[i]=tolower(sr[i]);
         }
         
-        ofstream history("history.txt",ios::app);
+        ofstream history("history.txt",ios::app); // append the searched contents into history.txt
         history<<"-->";
 
         for(int i=0;i<50 && sr[i]!='\0';i++)
@@ -349,7 +349,7 @@ void Input::formating()
 
 void Input::check_history()
 {
-    ifstream history("history.txt");
+    ifstream history("history.txt"); // create a file history.txt
         char c;
         history.get(c);
         while(!(history.eof()))
