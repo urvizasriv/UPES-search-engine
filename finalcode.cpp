@@ -5,8 +5,9 @@
 #include<fstream> // fstream : ifstream(input , write) , ofstream(output, read)
 #include<stdio.h> //fflush()
 #include<stdlib.h> //goto
-#include<dirent.h>
+#include<dirent.h> // used to display all files in currrent directory 
 using namespace std; // standard library (with the same name available in different libraries) if we do not use it we have to write std:: 
+
 class List{
 
 private:
@@ -74,13 +75,13 @@ bool List::search(string fName){
     string fileName;
 
     
-    cout << "Enter the name of the database you want to create: \n";
+    cout << "Enter the name of the file you want to create: \n";
     getline (cin, fileName);
 
     
     if(this->search(fileName) == false){ 
         db.open(fileName.c_str());
-        cout << "\nYour database " << fileName << " was created successfully\n";
+        cout << "\nYour file " << fileName << " was created successfully\n";
 
         
         this->insert(fileName, 0);
@@ -88,7 +89,7 @@ bool List::search(string fName){
 
     
     else{
-        cout << "\nCould not create database because database name is already taken\n";
+        cout << "\nCould not create file because file name is already taken\n";
     }
 
     
@@ -123,15 +124,15 @@ void List::openDB() {
 
 void display() {
     //function to display all the files present in the directory where this code is present
-    struct dirent *d;
-    DIR *dr;
-    dr = opendir(".");
-    if(dr!=NULL)
+    struct dirent *d;        // inbuilt structure for directory read
+    DIR *dr;                // DIR is a type representing a directory stream.    Declare a poniter dr to the DIR type.
+    dr = opendir(".");      // function to open all file in present directory
+    if(dr!=NULL)            // check if directory is not null / empty
     {
         cout<<"List of Files & Folders:-\n";
-        for(d=readdir(dr); d!=NULL; d=readdir(dr))
+        for(d=readdir(dr); d!=NULL; d=readdir(dr))  // readdir returns a null pointer upon reaching the end of the directory stream.
         {
-            cout<<d->d_name<<endl;
+            cout<<d->d_name<<endl; // d_name is specified under structure dirent
         }
         closedir(dr);
     }
@@ -593,9 +594,14 @@ int main()
                     goto a;
                 if(c=='4')
                    goto c; 
-
+        }
     b:
-        S1.clear_history();
+        system("cls");
+        S1.formating1();
+
+        if(c=='3')
+        {
+            S1.clear_history();
 
             cout<<"History is cleared."<<endl;
 
@@ -610,9 +616,11 @@ int main()
                 if(c=='2')
                     goto a;
                 if(c=='4')
-                    goto c; 
-                    
+                    goto c;
         }
+              
+                    
+        
     c:
     {
           if(c=='4')
