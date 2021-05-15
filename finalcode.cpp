@@ -29,6 +29,9 @@ public:
     void openDB();
     int menu();
 }; //end class
+
+
+
 List::List(){
     head = NULL;
     curr = NULL;
